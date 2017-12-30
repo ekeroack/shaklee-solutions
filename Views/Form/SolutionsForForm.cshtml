@@ -1,0 +1,15 @@
+﻿@model ShakleeSolutions.Models.ViewModels.SolutionsForFormViewModel
+
+@{
+    ViewBag.Title = "SolutionsForForm";
+}
+
+<h2>SolutionsForForm</h2>
+
+<div>
+    @foreach (var solution in Model.SolutionsToDisplay)
+    {
+        @Html.Label(solution.Name + " " + solution.Count, new { style="font-weight:normal" })
+        <br/>
+    }
+</div>
